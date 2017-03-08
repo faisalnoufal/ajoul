@@ -44,16 +44,55 @@ logo { font-family: "Raleway", sans-serif; font-size: 2em; font-weight: 900; let
 
 <body>
 <div class="container">
-	<nav class="nav-navbar navbar-default navbar-fixed-top">
-	  <div class="container-fluid">
-	    <div class="navbar-header">
-	      <div class="navbar-brand navbar-text" href="#">
-           	       <a href="#">
-			       <logo color="white">AJOUL</logo></a>
-	      </div>
-         </div>
-	  </div>
-	</nav>
+	        <nav class="nav-navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-brand navbar-text" href="#">
+                    <logo>AJOUL</logo>
+                </div>
+                <div class="navbar-collapse collapse navbar-text pull-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Tarif
+					<b class="caret"> </b>
+					 </a>
+                            <ul class="dropdown-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					   <li class="dropdown-header">Single</li>
+           </a>
+                                <li>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"></a>
+                                    <a href="#">Premium</a>
+                                </li>
+                                <li>
+                                    <a href="#"> Luxury</a>
+                                </li>
+                                <li class="dropdown-header">Double</li>
+                                <li>
+                                    <a href="#"> </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Luxury</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                    </ul>
+                    <form id="signin" class="navbar-form navbar-right" role="form">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                        <button type="submit" class="btn btn-success">Signup</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
 </div>
   <section class="fullsize-video-bg">
 	<div class="inner">
@@ -72,8 +111,7 @@ logo { font-family: "Raleway", sans-serif; font-size: 2em; font-weight: 900; let
 </section>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
-
-    <script src="js/index.js"></script>
+  <script src="js/index.js"></script>
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
