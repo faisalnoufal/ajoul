@@ -44,56 +44,62 @@ logo { font-family: "Raleway", sans-serif; font-size: 2em; font-weight: 900; let
 
 <body>
 <div class="container">
-	        <nav class="nav-navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-brand navbar-text" href="#">
-                    <logo>AJOUL</logo>
-                </div>
-                <div class="navbar-collapse collapse navbar-text pull-right">
-                    <ul class="nav navbar-nav">
-                        <li class="active">
-                            <a href="#">Home</a>
+          <nav role="navigation" class="navbar">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a href="#" class="navbar-brand navbar-text">
+                      <logo>AJOUL</logo>
+                  </a>
+              </div>
+              <!-- Collection of nav links, forms, and other content for toggling -->
+              <div id="navbarCollapse" class="collapse navbar-collapse navbar-right navbar-text">
+                  <ul class="nav navbar-nav">
+                      <li class="active"><a href="#">Home</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li class="dropdown">
+                          <a data-toggle="dropdown" class="dropdown-toggle" href="#">Tariff <b class="caret"></b></a>
+                          <ul role="menu" class="dropdown-menu">
+                              <li><a href="#">Single</a></li>
+                              <li><a href="#">Double</a></li>
+                              <li><a href="#">Premium</a></li>
+                              <li><a href="#">Luxury</a></li>
+                              <li class="divider"></li>
+                              <li><a href="#">Honeymoon</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login</a>
+                            <div class="dropdown-menu" style="padding:17px;">
+                                <form id="formLogin" class="form">
+                                    <label>Login</label>
+                                    <input name="_csrf" id="token" value="PhyBnuWl-F1hIGy0gY8q7V25nFI7pqDq8Omc" type="hidden">
+    							    <input name="username" id="username" placeholder="Username" pattern="^[a-z,A-Z,0-9,_]{6,15}$" data-valid-min="6" title="Enter your username" required="" type="text">
+    							    <input name="password" id="password" placeholder="Password" title="Enter your password" required="" type="password"><br>
+    							    <button type="button" id="btnLogin" class="btn">Login</button>
+    							</form>
+                                <form><a href="#" title="Fast and free sign up!" id="btnNewUser" data-toggle="collapse" data-target="#formRegister">New User? Sign-up..</a></form>
+                                <form id="formRegister" class="form collapse">
+                                    <input name="_csrf" id="token" value="PhyBnuWl-F1hIGy0gY8q7V25nFI7pqDq8Omc" type="hidden">
+                                    <input name="email" id="inputEmail" placeholder="Email" required="" type="email">
+        						    <input name="username" id="inputUsername" placeholder="Username" pattern="^[a-z,A-Z,0-9,_]{6,15}$" data-valid-min="6" title="Choose a username" required="" type="text"><br>
+    							    <input name="password" id="inputpassword" placeholder="Password" required="" type="password">
+                                    <input name="verify" id="inputVerify" placeholder="Password (again)" required="" type="password"><br>
+    							    <button type="button" id="btnRegister" class="btn">Sign Up</button>
+    							</form>
+                                <a data-toggle="modal" role="button" href="#forgotPasswordModal">Forgot username or password?</a>
+                                <a data-toggle="modal" role="button" href="#contactModal"><small>Need help? Contact us</small></a>
+                            </div>
                         </li>
-                        <li>
-                            <a href="#">About us</a>
-                        </li>
-
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Tarif
-					<b class="caret"> </b>
-					 </a>
-                            <ul class="dropdown-menu">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-					   <li class="dropdown-header">SUV</li>
-           </a>
-                                <li>
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"></a>
-                                    <a href="#">Premium</a>
-                                </li>
-                                <li>
-                                    <a href="#"> Luxury</a>
-                                </li>
-                                <li class="dropdown-header">Sedan</li>
-                                <li>
-                                    <a href="#"> </a>
-                                </li>
-                                <li>
-                                    <a href="#"> Luxury</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Contact us</a>
-                        </li>
-                    </ul>
-                    <form id="signin" class="navbar-form navbar-right" role="form">
-                        <button type="submit" class="btn btn-primary">Login</button>
-                        <button type="submit" class="btn btn-success">Signup</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-</div>
+                  </ul>
+              </div>
+          </nav>
+      </div>
   <section class="fullsize-video-bg">
 	<div class="inner">
 		<div>
